@@ -15,6 +15,26 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
+    public Product saveProduct(Product product) {
+        return null;
+    }
+
+    @Override
+    public Product updateProduct(Product product, Integer productId) {
+        return null;
+    }
+
+    @Override
+    public void deleteProduct(Integer productId) {
+
+    }
+
+    @Override
+    public Product getProductById(Integer productId) {
+        return null;
+    }
+
+    @Override
     @Cacheable(value = "product")
     public List<Product> getAllProducts() {
         return  productRepository.findAll();
